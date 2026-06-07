@@ -1,7 +1,8 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
+// base deve combaciare col nome repo per gh-pages (altrimenti asset 404 / pagina bianca)
 export default defineConfig({
   plugins: [react()],
-})
+  base: "/lie-fitness/",
+});
